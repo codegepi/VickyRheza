@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+		<script type="text/javascript" src="../js/jquery.js"></script>
+	</head>
+	<body>
+		<fieldset id="container">
+			<form>
+				<div id="first-form">
+					<input type="text" name="Fname" placeholder="first name"/>
+				</div>
+				<div id="last-form">
+					<input type="text" name="Lname" placeholder="fLast name"/>
+				</div>
+				<div id="address-form">
+					<input type="text" name="addressbar" placeholder="Address"/>
+				</div>
+				<div id="BOD-form">
+					<input type="text" name="BirthDate" placeholder="dd/mm/yyyy"/>
+				</div>
+				<div id="Submit">
+					<button id="BtnSubmit">Submit</button>
+				</div>
+			</form>
+		</fieldset>
+		<p class="first"></p>
+		<p class="last"></p>
+		<p class="address"></p>
+		<p class="birthdate"></p>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#BtnSubmit").click(function() {
+					var firstname = $("input[name=Fname]").val();
+					var lastname = $("input[name=Lname]").val();
+					var address = $("input[name=addressbar]").val();
+					var dateofbirth = $("input[name=BirthDate]").val();
+
+					if(firstname == "" || lastname == "" || address == "" || dateofbirth == "") {
+						alert("field must not be empty");
+					}
+					else {
+						$(".first").append("First Name= "+firstname);
+						$(".last").append("last Name= "+lastname);
+						$(".address").append("Address= "+address);
+						$(".birthdate").append("dateofbirth= "+dateofbirth);
+					}
+
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>

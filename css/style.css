@@ -1,0 +1,28 @@
+#container {
+	width: 200px;
+}
+
+#first-form {
+	margin-top: 5px;
+	text-align: center;
+}
+
+#last-form {
+	margin-top: 5px;
+	text-align: center;
+}
+
+#address-form {
+	margin-top: 5px;
+	text-align: center;
+}
+
+#BOD-form {
+	margin-top: 5px;
+	text-align: center;
+}
+
+#Submit {
+	margin-top: 20px;
+	text-align: center;
+}
